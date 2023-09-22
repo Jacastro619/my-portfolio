@@ -8,7 +8,7 @@ body {
     background-color: #272829;
 }
 
-header {
+.top-header {
     color: white;
     display: flex;
     justify-content: space-between;
@@ -23,6 +23,7 @@ header {
     margin-bottom: 10px;
     padding: 20px;
     border: 5px solid white;
+    border-radius: 5px;
     width: 300px;
     text-align: center;
 }
@@ -71,7 +72,7 @@ img {
     justify-content: start;
     color: white;
     font-size: 250%;
-    padding-right: 250px;
+    margin: 250px;
 }
 
 .horiseon-project a img {
@@ -92,16 +93,30 @@ img {
     justify-content: start;
     border-right: 6px solid white;
     margin-right: 100px;
-    top: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
     z-index: 100;
 }
 @media screen and (max-width: 768px) {
-    header {
+    .top-header {
         flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
         padding-bottom: 20px;
     }
 
-    a {
+    nav ul a {
         margin-left: 25px;
     }
+
+    .horiseon-project a img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .projects header {
+        margin-right: 0;
+        flex-direction: column;
+    }
+
 }
