@@ -84,39 +84,107 @@ nav ul a {
 
 .projects {
     display: flex;
+    position: relative;
     justify-content: end;
 
 }
 
 .projects header {
-    justify-content: start;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: white;
     font-size: 250%;
-    margin: 300px;
+}
+
+.project-links {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-right: 50px;
+
 }
 
 .project-links a img {
-    width: 900px;
-    height: 500px;
-    margin-top: 20px;
-    margin-bottom: 50px;
-    margin-right: 100px;
     border: 10px solid rgba(0, 0, 0, 0.5);
     border-radius: 5px;
 }
+
+.project-links a .horiseon {
+    margin-bottom: 20px;
+    width: 900px;
+    height: 500px;
+}
+
+.project-links a .coming-soon-1 {
+    margin-top: 100px;
+    width: 400px;
+    height: 300px;
+}
+
+.project-links a .coming-soon-2 {
+    width: 400px;
+    height: 300px;
+}
+
+.project-links a .coming-soon-3 {
+    width: 400px;
+    height: 300px;
+}
+
+.project-links a .coming-soon-4 {
+    width: 400px;
+    height: 300px;
+}
+
 .project-links img:hover {
     box-shadow: 10px 10px 20px gray;
 }
 
 .vertical-line {
     display: flex;
-    justify-content: start;
+    align-items: center;
     border-right: 4px solid white;
-    margin-right: 100px;
+    margin-right: 200px;
     margin-top: 10px;
     margin-bottom: 10px;
     z-index: 100;
 }
+
+@media screen and (max-width: 1805px) {
+    .project-links a .coming-soon-1 {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 982px) {
+    .project-links a .horiseon {
+        width: 400px;
+        height: 300px;
+    }
+
+    .project-links a .coming-soon-1 {
+        width: 350px;
+        height: 250px;
+    }
+    
+    .project-links a .coming-soon-2 {
+        width: 350px;
+        height: 250px;
+    }
+    
+    .project-links a .coming-soon-3 {
+        width: 350px;
+        height: 250px;
+    }
+    
+    .project-links a .coming-soon-4 {
+        width: 350px;
+        height: 250px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .top-header {
         flex-wrap: wrap;
@@ -130,18 +198,53 @@ nav ul a {
     }
 
     .profile-pic {
-        display: none;
+        width: 100px;
+        height: 125px;
       }
+
+      .vertical-line {
+        margin-right: 10px;
+    }
 
       .projects header {
           margin-right: 0;
           flex-direction: column;
       }
       
-    .project-links a img {
+    .project-links a .horiseon {
+        width: 400px;
+        height: 300px;
+    }
+
+    .project-links a .coming-soon-1 {
         width: 200px;
-        height: 200px;
+        height: 150px;
+    }
+    
+    .project-links a .coming-soon-2 {
+        width: 200px;
+        height: 150px;
+    }
+    
+    .project-links a .coming-soon-3 {
+        width: 200px;
+        height: 150px;
+    }
+    
+    .project-links a .coming-soon-4 {
+        width: 200px;
+        height: 150px;
     }
 
 
+}
+
+@media screen and (max-width: 667px) {
+    .profile-pic {
+        display: none;
+      }
+
+      .projects header {
+       font-size: 100%;
+    }
 }
