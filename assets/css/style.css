@@ -1,5 +1,6 @@
 :root {
     --dark-color: #272829;
+    --lighter-color: #CCC8AA;
     --white-border: white; 
 }
 
@@ -65,7 +66,7 @@ nav ul a {
 }
 
 .about-me{
-    background-color: #CCC8AA;
+    background-color: var(--lighter-color);
     padding-top: 10px;
 }
 
@@ -82,19 +83,16 @@ nav ul a {
     padding-bottom: 20px;
 }
 
-.projects {
+.project {
     display: flex;
-    position: relative;
-    justify-content: end;
-
 }
 
-.projects header {
+.section-header {
     display: flex;
     align-items: center;
-    justify-content: center;
     color: white;
-    font-size: 250%;
+    font-size: 200%;
+    margin-left: 75px;
 }
 
 .project-links {
@@ -111,29 +109,21 @@ nav ul a {
     border-radius: 5px;
 }
 
-.project-links a .horiseon {
+/*Project link images*/
+
+.horiseon {
     margin-bottom: 20px;
     width: 900px;
     height: 500px;
 }
 
-.project-links a .coming-soon-1 {
+.coming-soon-1 {
     margin-top: 100px;
     width: 400px;
     height: 300px;
 }
 
-.project-links a .coming-soon-2 {
-    width: 400px;
-    height: 300px;
-}
-
-.project-links a .coming-soon-3 {
-    width: 400px;
-    height: 300px;
-}
-
-.project-links a .coming-soon-4 {
+.coming-soon-2, .coming-soon-3, .coming-soon-4 {
     width: 400px;
     height: 300px;
 }
@@ -142,14 +132,55 @@ nav ul a {
     box-shadow: 10px 10px 20px gray;
 }
 
-.vertical-line {
-    display: flex;
-    align-items: center;
+/* vertical line dividers */
+
+.vertical-line-1 {
     border-right: 4px solid white;
-    margin-right: 200px;
+    margin-right: 0px;
     margin-top: 10px;
     margin-bottom: 10px;
-    z-index: 100;
+    margin-left: 100px;
+}
+
+.vertical-line-2 {
+    border-right: 4px solid white;
+    margin-right: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 40px;
+}
+
+.contact-me {
+    background-color: var(--lighter-color);
+    display: flex;
+}
+
+.contact-links {
+    display: flex;
+    font-size: 250%;
+    text-decoration: none;
+    color: white;
+}
+
+.contact-links a {
+    background-color: var(--dark-color);
+    border: 5px solid var(--dark-color);
+    border-radius: 20px;
+    box-shadow: 5px 5px white;
+    margin-top: 25px;
+    margin-left: 250px;
+    margin-bottom: 25px;
+    text-decoration: none;
+    color: white;
+}
+
+footer {
+    text-align: center;
+}
+
+footer h4 {
+    color: white;
+    padding: 50px;
 }
 
 @media screen and (max-width: 1805px) {
@@ -158,38 +189,43 @@ nav ul a {
     }
 }
 
+@media screen and (max-width: 1650px) {
+    .contact-links {
+        font-size: 200%;
+    }
+
+    .contact-links a {
+        margin-left: 75px;
+    }
+
+}
+
 @media screen and (max-width: 982px) {
-    .project-links a .horiseon {
+
+    .vertical-line {
+        margin-left: 0;
+    }
+
+    .horiseon {
         width: 400px;
         height: 300px;
     }
 
-    .project-links a .coming-soon-1 {
+    .coming-soon-1, .coming-soon-2, .coming-soon-3, .coming-soon-4 {
         width: 350px;
         height: 250px;
     }
-    
-    .project-links a .coming-soon-2 {
-        width: 350px;
-        height: 250px;
+
+    .contact-links {
+        font-size: 125%;
     }
-    
-    .project-links a .coming-soon-3 {
-        width: 350px;
-        height: 250px;
-    }
-    
-    .project-links a .coming-soon-4 {
-        width: 350px;
-        height: 250px;
-    }
+
 }
 
 @media screen and (max-width: 768px) {
     .top-header {
         flex-wrap: wrap;
         justify-content: center;
-        align-items: center;
         padding-bottom: 20px;
     }
 
@@ -202,41 +238,32 @@ nav ul a {
         height: 125px;
       }
 
-      .vertical-line {
-        margin-right: 10px;
-    }
-
-      .projects header {
+    .projects header {
           margin-right: 0;
           flex-direction: column;
+        }
+
+    .vertical-line {
+          margin-left: 0;
       }
       
-    .project-links a .horiseon {
-        width: 400px;
-        height: 300px;
+    .horiseon {
+        width: 350px;
+        height: 250px;
     }
 
-    .project-links a .coming-soon-1 {
-        width: 200px;
-        height: 150px;
-    }
-    
-    .project-links a .coming-soon-2 {
-        width: 200px;
-        height: 150px;
-    }
-    
-    .project-links a .coming-soon-3 {
-        width: 200px;
-        height: 150px;
-    }
-    
-    .project-links a .coming-soon-4 {
+    .coming-soon-1, .coming-soon-2, .coming-soon-3, .coming-soon-4 {
         width: 200px;
         height: 150px;
     }
 
+    .contact-links {
+        font-size: 100%;
+    }
 
+    .contact-links a {
+        margin-left: 50px;
+    }
 }
 
 @media screen and (max-width: 667px) {
@@ -246,5 +273,13 @@ nav ul a {
 
       .projects header {
        font-size: 100%;
+    }
+
+    .contact-links {
+        font-size: 75%;
+    }
+
+    .contact-links a {
+        margin-left: 20px;
     }
 }
