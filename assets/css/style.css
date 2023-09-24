@@ -336,3 +336,53 @@ footer h4 {
         top: 90%;
     }
 }
+
+@media screen and (max-width: 480px) {
+    .section-header {
+        margin: 0;
+    }
+
+    .profile-pic {
+        left: 0%;
+        border: solid black;
+    }
+
+    .section-header {
+       font-size: 100%;
+    }
+
+    .horiseon {
+        width: 250px;
+        height: 150px;
+    }
+
+    .coming-soon-1, .coming-soon-2, .coming-soon-3, .coming-soon-4 {
+        width: 100px;
+        height: 50px;
+    }
+
+    .contact-links {
+        font-size: 100%;
+    }
+
+    .contact-links a {
+        margin-left: 50px;
+    }
+
+    .contact-links {
+        font-size: 50%;
+    }
+
+    .contact-links a {
+        margin-left: 10px;
+    }
+
+    .contact-me {
+        width: 100%;
+    }
+
+    button {
+        left: 70%;
+        top: 90%;
+    }
+}
