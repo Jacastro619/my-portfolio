@@ -49,7 +49,7 @@ button a {
 /* Navigation bar with links */
 
 .header-left {
-    margin: 10px 0 10px 20px;
+    margin: 20px;
     padding: 20px;
     border: 5px solid var(--white-border);
     border-radius: 5px;
@@ -343,7 +343,7 @@ footer h4 {
     }
 
     .contact-me .section-header {
-        font-size: 50%;
+        font-size: 52%;
     }
 
     .contact-links {
@@ -351,7 +351,7 @@ footer h4 {
     }
 
     .contact-links a {
-        margin-left: 10px;
+        justify-content: center;
     }
 
     .contact-me {
