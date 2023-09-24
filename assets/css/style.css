@@ -337,7 +337,7 @@ footer h4 {
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 360px) {
     .section-header {
         margin: 0;
     }
