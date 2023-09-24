@@ -317,7 +317,7 @@ footer h4 {
     }
 
     .section-header {
-       font-size: 50%;
+       font-size: 70%;
     }
 
     .project-links {
@@ -336,6 +336,14 @@ footer h4 {
     .coming-soon-1, .coming-soon-2, .coming-soon-3, .coming-soon-4 {
         width: 100px;
         height: 75px;
+    }
+
+    .contact-me .vertical-line {
+        margin-left: 0;
+    }
+
+    .contact-me .section-header {
+        font-size: 50%;
     }
 
     .contact-links {
