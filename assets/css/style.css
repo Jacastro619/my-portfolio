@@ -14,6 +14,28 @@ body {
     background-color: var(--dark-color);
 }
 
+/* Back to top button */
+
+button {
+    font-weight: bold;
+    display: flex;
+    position: fixed;
+    top: 95%;
+    left: 90%;
+    background-color: white;
+    font-size: 100%;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 2px;
+}
+
+button a {
+    text-decoration: none;
+    color: black;
+}
+
+/* top screen header */
+
 .top-header {
     color: white;
     display: flex;
@@ -22,6 +44,8 @@ body {
     background-color: var(--dark-color);
     padding-right: 10px;
 }
+
+/* Navigation bar with links */
 
 .header-left {
     margin-left: 20px;
@@ -34,7 +58,7 @@ body {
     text-align: center;
 }
 
-nav ul a {
+nav a {
     color: white;
     border: 3px solid var(--white-border);
     border-radius: 5px;
@@ -45,6 +69,8 @@ nav ul a {
     padding: 5px;
     text-decoration: none;
 }
+
+/* profile and cover picture */
 
 .intro-images {
     position: relative;
@@ -62,30 +88,12 @@ nav ul a {
 }
 
 .cover-pic {
-    width: 100%;
-}
-
-.about-me{
-    background-color: var(--lighter-color);
-    padding-top: 10px;
-}
-
-.about-me h3{
-    font-size: 250%;
-    text-align: center;
-}
-
-.about-me p{
-    font-size: 150%;
-    text-align: center;
-    margin: 20px;
-    margin-bottom: 0;
-    padding-bottom: 20px;
-}
-
-.project {
     display: flex;
+    width: 100%;
+    top: 1%;
 }
+
+/* Headers for each section */
 
 .section-header {
     display: flex;
@@ -94,6 +102,31 @@ nav ul a {
     font-size: 200%;
     margin-left: 75px;
 }
+
+/* about me section */
+
+.about-me {
+    background-color: var(--lighter-color);
+    padding: 20px;
+}
+
+.about-me h3 {
+    font-size: 250%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-me p {
+    font-size: 150%;
+    text-align: center;
+}
+
+/* Project section */
+
+.project {
+    display: flex;
+}
+
 
 .project-links {
     display: flex;
@@ -106,7 +139,7 @@ nav ul a {
 
 .project-links a img {
     border: 10px solid rgba(0, 0, 0, 0.5);
-    border-radius: 5px;
+    border-radius: 20px;
 }
 
 /*Project link images*/
@@ -134,7 +167,7 @@ nav ul a {
 
 /* vertical line dividers */
 
-.vertical-line-1 {
+.vertical-line {
     border-right: 4px solid white;
     margin-right: 0px;
     margin-top: 10px;
@@ -142,13 +175,11 @@ nav ul a {
     margin-left: 100px;
 }
 
-.vertical-line-2 {
-    border-right: 4px solid white;
-    margin-right: 0px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+.contact-me .vertical-line {
     margin-left: 40px;
 }
+
+/* contact me section */
 
 .contact-me {
     background-color: var(--lighter-color);
@@ -174,6 +205,8 @@ nav ul a {
     color: white;
 }
 
+/* bottom of page footer */
+
 footer {
     text-align: center;
 }
@@ -183,7 +216,9 @@ footer h4 {
     padding: 50px;
 }
 
-@media screen and (max-width: 1805px) {
+/* For different viewport sizes */
+
+@media screen and (max-width: 1740px) {
     .project-links a .coming-soon-1 {
         margin-top: 0;
     }
@@ -198,6 +233,13 @@ footer h4 {
         margin-left: 75px;
     }
 
+}
+
+@media screen and (max-width: 1280px) {
+    .horiseon {
+        width: 600px;
+        height: 400px;
+    }
 }
 
 @media screen and (max-width: 982px) {
@@ -271,7 +313,7 @@ footer h4 {
         display: none;
       }
 
-      .projects header {
+      .section-header {
        font-size: 100%;
     }
 
