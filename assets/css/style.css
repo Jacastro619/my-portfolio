@@ -306,8 +306,13 @@ footer h4 {
 }
 
 @media screen and (max-width: 667px) {
+
+    .section-header {
+        margin: 0;
+    }
+
     .profile-pic {
-        display: none;
+        border: solid black;
     }
 
     .section-header {
@@ -320,5 +325,14 @@ footer h4 {
 
     .contact-links a {
         margin-left: 20px;
+    }
+
+    .contact-me {
+        width: 100%;
+    }
+
+    button {
+        left: 70%;
+        top: 90%;
     }
 }
