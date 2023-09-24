@@ -137,6 +137,8 @@ nav a {
 }
 
 .project-links a {
+    display: flex;
+    align-items: center;
     position: relative;
 }
 
@@ -156,18 +158,13 @@ nav a {
 }
 
 .horiseon {
-    margin-bottom: 20px;
+    margin: 0 20px 20px 0;
     width: 900px;
     height: 500px;
 }
 
-.coming-soon-1 {
-    margin-top: 100px;
-    width: 400px;
-    height: 300px;
-}
-
-.coming-soon-2, .coming-soon-3, .coming-soon-4 {
+.coming-soon-1, .coming-soon-2, .coming-soon-3, .coming-soon-4 {
+    margin-right: 20px;
     width: 400px;
     height: 300px;
 }
@@ -223,12 +220,6 @@ footer h4 {
 }
 
 /* For different viewport sizes */
-
-@media screen and (max-width: 1740px) {
-    .project-links a .coming-soon-1 {
-        margin-top: 0;
-    }
-}
 
 @media screen and (max-width: 1650px) {
     .contact-links {
