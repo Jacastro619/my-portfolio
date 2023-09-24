@@ -48,9 +48,7 @@ button a {
 /* Navigation bar with links */
 
 .header-left {
-    margin-left: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 10px 0 10px 20px;
     padding: 20px;
     border: 5px solid var(--white-border);
     border-radius: 5px;
@@ -63,9 +61,7 @@ nav a {
     border: 3px solid var(--white-border);
     border-radius: 5px;
     box-shadow: 2px 2px white;
-    margin-left: 10px;
-    margin-bottom: 10px;
-    margin-right: 5px;
+    margin: 0 5px 10px 10px;
     padding: 5px;
     text-decoration: none;
 }
@@ -118,7 +114,7 @@ nav a {
 
 .about-me p {
     font-size: 150%;
-    text-align: center;
+    padding: 20px;
 }
 
 /* Project section */
@@ -132,9 +128,7 @@ nav a {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-right: 50px;
+    margin: 50px 50px 50px 0;
 }
 
 .project-links a img {
@@ -142,7 +136,24 @@ nav a {
     border-radius: 20px;
 }
 
-/*Project link images*/
+.project-links a {
+    position: relative;
+}
+
+/*Project link images and titles*/
+
+.horiseon-title {
+    position: absolute;
+    display: flex;
+    bottom: 20%;
+    left: 5%;
+    color: white;
+    text-decoration: none;
+    border: 2px solid var(--lighter-color);
+    border-radius: 5px;
+    padding: 5px;
+    background-color: var(--dark-color);
+}
 
 .horiseon {
     margin-bottom: 20px;
@@ -169,10 +180,7 @@ nav a {
 
 .vertical-line {
     border-right: 4px solid white;
-    margin-right: 0px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 100px;
+    margin: 10px 0 10px 100px;
 }
 
 .contact-me .vertical-line {
@@ -198,9 +206,7 @@ nav a {
     border: 5px solid var(--dark-color);
     border-radius: 20px;
     box-shadow: 5px 5px white;
-    margin-top: 25px;
-    margin-left: 250px;
-    margin-bottom: 25px;
+    margin: 25px 0 25px 250px;
     text-decoration: none;
     color: white;
 }
@@ -278,16 +284,16 @@ footer h4 {
     .profile-pic {
         width: 100px;
         height: 125px;
-      }
+    }
 
     .projects header {
           margin-right: 0;
           flex-direction: column;
-        }
+    }
 
     .vertical-line {
           margin-left: 0;
-      }
+    }
       
     .horiseon {
         width: 350px;
@@ -311,9 +317,9 @@ footer h4 {
 @media screen and (max-width: 667px) {
     .profile-pic {
         display: none;
-      }
+    }
 
-      .section-header {
+    .section-header {
        font-size: 100%;
     }
 
