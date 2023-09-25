@@ -198,7 +198,14 @@ nav a {
     color: white;
 }
 
+.contact-links a:hover {
+    color: var(--dark-color);
+    background-color: lightgray;
+    box-shadow: 5px 5px var(--dark-color);
+}
+
 .contact-links a {
+    padding: 0 5px 0 5px;
     background-color: var(--dark-color);
     border: 5px solid var(--dark-color);
     border-radius: 20px;
