@@ -61,10 +61,13 @@ nav a {
     color: white;
     border: 3px solid var(--white-border);
     border-radius: 5px;
-    box-shadow: 2px 2px white;
     margin: 0 5px 10px 10px;
     padding: 5px;
     text-decoration: none;
+}
+
+nav a:hover {
+    box-shadow: 3px 3px var(--lighter-color);
 }
 
 /* profile and cover picture */
@@ -209,7 +212,6 @@ nav a {
     background-color: var(--dark-color);
     border: 5px solid var(--dark-color);
     border-radius: 20px;
-    box-shadow: 5px 5px white;
     margin: 25px 0 25px 250px;
     text-decoration: none;
     color: white;
