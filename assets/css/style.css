@@ -149,7 +149,7 @@ nav a:hover {
 /*Project link images and titles*/
 
 .horiseon-title,
-.password-title {
+.title {
   position: absolute;
   display: flex;
   bottom: 20%;
@@ -162,9 +162,9 @@ nav a:hover {
   background-color: var(--lighter-color);
 }
 
-.password-title {
+.title {
   font-size: 85%;
-  bottom: 20%;
+  bottom: 10%;
 }
 
 .horiseon {
@@ -179,7 +179,7 @@ nav a:hover {
 }
 
 .password,
-.coming-soon-2,
+.js-quiz,
 .coming-soon-3,
 .coming-soon-4 {
   width: 450px;
@@ -189,6 +189,7 @@ nav a:hover {
 .pro-img {
   height: 325px;
   width: 450px;
+  margin: 20px;
 }
 
 .project-links img:hover {
@@ -249,7 +250,7 @@ footer h4 {
 
 /* For different viewport sizes */
 
-@media screen and (max-width: 1650px) {
+@media screen and (max-width: 1670px) {
   .contact-links {
     font-size: 200%;
   }
@@ -259,14 +260,57 @@ footer h4 {
   }
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1381px) {
+  .project {
+    flex-direction: column;
+  }
+  .project-links {
+    flex-direction: column;
+  }
+
+  .fir-pro-img {
+    margin: 0;
+    width: 600px;
+    height: 400px;
+    justify-content: center;
+  }
+
+  .pro-img {
+    width: 350px;
+    height: 250px;
+  }
+
+  .password,
+  .js-quiz,
+  .coming-soon-3,
+  .coming-soon-4 {
+    width: 350px;
+    height: 250px;
+  }
+
+  .project .section-header {
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    justify-content: center;
+    border-bottom: 4px solid white;
+  }
+
+  .vertical-line {
+    border: 0px;
+  }
+
   .horiseon {
     width: 600px;
     height: 400px;
   }
 }
 
-@media screen and (max-width: 982px) {
+@media screen and (max-width: 1041px) {
+  .project {
+    flex-direction: column;
+  }
+
   .vertical-line {
     margin-left: 0;
   }
@@ -276,8 +320,14 @@ footer h4 {
     height: 300px;
   }
 
-  .coming-soon-1,
-  .coming-soon-2,
+  .fir-pro-img {
+    width: 350px;
+    height: 250px;
+  }
+
+  .horiseon,
+  .password,
+  .js-quiz,
   .coming-soon-3,
   .coming-soon-4 {
     width: 350px;
@@ -300,11 +350,6 @@ footer h4 {
     margin-left: 25px;
   }
 
-  .profile-pic {
-    width: 100px;
-    height: 125px;
-  }
-
   .projects header {
     margin-right: 0;
     flex-direction: column;
@@ -319,13 +364,13 @@ footer h4 {
     height: 250px;
   }
 
-  .coming-soon-1,
-  .coming-soon-2,
+  /* .password,
+  .js-quiz,
   .coming-soon-3,
   .coming-soon-4 {
     width: 200px;
     height: 150px;
-  }
+  } */
 
   .contact-links {
     font-size: 100%;
@@ -346,25 +391,32 @@ footer h4 {
     border: solid black;
   }
 
-  .section-header {
-    font-size: 70%;
-  }
-
   .project-links {
     margin-right: 0;
   }
 
-  .horiseon-title {
-    font-size: 75%;
-  }
-
   .horiseon {
-    width: 250px;
-    height: 200px;
+    width: 100px;
+    height: 75px;
   }
 
-  .coming-soon-1,
-  .coming-soon-2,
+  .horiseon-title,
+  .title {
+    font-size: 15%;
+  }
+
+  .fir-pro-img {
+    width: 100px;
+    height: 75px;
+  }
+
+  .pro-img {
+    width: 100px;
+    height: 75px;
+  }
+
+  .password,
+  .js-quiz,
   .coming-soon-3,
   .coming-soon-4 {
     width: 100px;
@@ -376,7 +428,7 @@ footer h4 {
   }
 
   .contact-me .section-header {
-    font-size: 51%;
+    font-size: 80%;
   }
 
   .contact-links {
