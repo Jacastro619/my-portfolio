@@ -129,10 +129,10 @@ nav a:hover {
 
 .project-links {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: start;
   align-items: center;
   flex-wrap: wrap;
-  margin: 50px 50px 50px 0;
+  margin: 50px 0 50px 0;
 }
 
 .project-links a img {
@@ -172,16 +172,22 @@ nav a:hover {
   height: 500px;
 }
 
+.fir-pro {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+
 .fir-pro-img {
-  margin: 0 20px 20px 0;
+  margin: 0 20px 20px 50px;
   width: 850px;
   height: 500px;
 }
 
 .password,
 .js-quiz,
-.coming-soon-3,
-.coming-soon-4 {
+.coming-soon {
   width: 450px;
   height: 325px;
 }
@@ -190,6 +196,7 @@ nav a:hover {
   height: 325px;
   width: 450px;
   margin: 20px;
+  margin-left: 50px;
 }
 
 .project-links img:hover {
@@ -282,8 +289,7 @@ footer h4 {
 
   .password,
   .js-quiz,
-  .coming-soon-3,
-  .coming-soon-4 {
+  .coming-soon {
     width: 350px;
     height: 250px;
   }
@@ -328,8 +334,7 @@ footer h4 {
   .horiseon,
   .password,
   .js-quiz,
-  .coming-soon-3,
-  .coming-soon-4 {
+  .coming-soon {
     width: 350px;
     height: 250px;
   }
@@ -339,7 +344,7 @@ footer h4 {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 891px) {
   .top-header {
     flex-wrap: wrap;
     justify-content: center;
@@ -364,14 +369,6 @@ footer h4 {
     height: 250px;
   }
 
-  /* .password,
-  .js-quiz,
-  .coming-soon-3,
-  .coming-soon-4 {
-    width: 200px;
-    height: 150px;
-  } */
-
   .contact-links {
     font-size: 100%;
   }
@@ -381,14 +378,9 @@ footer h4 {
   }
 }
 
-@media screen and (max-width: 667px) {
+@media screen and (max-width: 763px) {
   .section-header {
     margin: 0;
-  }
-
-  .profile-pic {
-    left: 0%;
-    border: solid black;
   }
 
   .project-links {
@@ -417,8 +409,7 @@ footer h4 {
 
   .password,
   .js-quiz,
-  .coming-soon-3,
-  .coming-soon-4 {
+  .coming-soon {
     width: 100px;
     height: 75px;
   }
