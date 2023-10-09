@@ -148,12 +148,12 @@ nav a:hover {
 
 /*Project link images and titles*/
 
-.horiseon-title,
+.fir-pro-title,
 .title {
   position: absolute;
   display: flex;
-  bottom: 20%;
-  left: 5%;
+  bottom: 10%;
+  left: 2%;
   color: #333333;
   text-decoration: none;
   border: 2px solid black;
@@ -164,10 +164,9 @@ nav a:hover {
 
 .title {
   font-size: 85%;
-  bottom: 10%;
 }
 
-.horiseon {
+.weather-dashboard {
   width: 850px;
   height: 500px;
 }
@@ -181,13 +180,11 @@ nav a:hover {
 
 .fir-pro-img {
   margin: 0 20px 20px 50px;
-  width: 850px;
+  width: 1000px;
   height: 500px;
 }
 
-.password,
-.js-quiz,
-.coming-soon {
+.sec-pro-img {
   width: 450px;
   height: 325px;
 }
@@ -337,6 +334,10 @@ footer h4 {
   .coming-soon {
     width: 350px;
     height: 250px;
+  }
+
+  .pro-img {
+    margin-left: 17px;
   }
 
   .contact-links {

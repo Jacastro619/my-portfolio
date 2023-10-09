@@ -30,7 +30,7 @@ Within this portfolio, you'll find a simple and clean design and layout. There's
 
 ---
 
-- Project Links (In project section): Here you will see images of my completed projects and some placeholders for future projects. You may click on a completed project of interest and it will direct you to that deployed project. At the moment there is only a few projects that are completed with a working link. However, as more projects are completed, they will be added to the portfolio.
+- Project Links (In project section): Here you will see images of my completed projects and some placeholders for future projects. You may click on a completed project of interest and it will direct you to that deployed project. As more projects are completed, they will be added to the portfolio.
 
 ![project section screenshot](./assets/images/projects-screenshot.JPG)
 
