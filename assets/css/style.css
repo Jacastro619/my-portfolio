@@ -408,6 +408,14 @@ footer h4 {
   }
 }
 
+@media screen and (max-width: 991px) {
+  .nav-links {
+    text-align: center;
+    padding: 2px;
+    max-width: 150px;
+  }
+}
+
 @media screen and (max-width: 891px) {
   .top-header {
     flex-wrap: wrap;
