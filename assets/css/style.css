@@ -11,6 +11,15 @@
   padding: 0;
 }
 
+.profile-pic-resp {
+  display: none;
+  border-radius: 250px;
+  border: 5px solid rgba(128, 128, 128, 0.9);
+  min-width: 250px;
+  max-width: 250px;
+  max-height: 300px;
+}
+
 body {
   background-color: var(--dark-color);
 }
@@ -70,6 +79,13 @@ button a {
 
 /* top screen header */
 
+.intro-images {
+  display: flex;
+  background-image: url(../images/background-photo.jpg);
+  height: 300px;
+  align-items: center;
+}
+
 .custom-nav {
   display: flex;
   justify-content: space-between;
@@ -114,24 +130,13 @@ nav a:hover {
 
 /* profile and cover picture */
 
-.intro-images {
-  position: relative;
-}
-
 .profile-pic {
-  position: absolute;
   border-radius: 250px;
   border: 5px solid rgba(128, 128, 128, 0.9);
   width: 17%;
-  max-width: 100%;
+  max-width: 300px;
   height: 75%;
-  top: 11%;
-  left: 1.75%;
-}
-
-.cover-pic {
-  display: flex;
-  width: 100%;
+  max-height: 300px;
 }
 
 /* Headers for each section */
@@ -146,9 +151,18 @@ nav a:hover {
 
 /* about me section */
 
+.custom-card {
+  box-shadow: 5px 5px 10px;
+}
+
 .about-me {
   background-color: var(--lighter-color);
   padding: 20px;
+}
+
+.about-me-par {
+  display: flex;
+  align-items: center;
 }
 
 .about-me h3 {
@@ -348,6 +362,14 @@ footer h4 {
     width: 600px;
     height: 400px;
   }
+
+  .profile-pic-resp {
+    display: flex;
+  }
+
+  .profile-pic {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1041px) {
@@ -418,6 +440,14 @@ footer h4 {
   .contact-links a {
     margin-left: 50px;
   }
+
+  .about-me p {
+    font-size: 100%;
+  }
+
+  .about-me-par {
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 763px) {
@@ -479,5 +509,11 @@ footer h4 {
   button {
     left: 70%;
     top: 90%;
+  }
+}
+
+@media screen and (max-width: 501px) {
+  .about-me p {
+    font-size: 75%;
   }
 }
