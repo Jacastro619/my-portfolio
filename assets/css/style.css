@@ -15,9 +15,41 @@ body {
   background-color: var(--dark-color);
 }
 
+.header-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid white;
+  border-radius: 25px;
+  padding: 10px;
+}
+
+.custom-link {
+  color: white;
+}
+
+.custom-link:hover {
+  color: white;
+}
+
+.custom-link2 {
+  color: white;
+  font-size: 125%;
+  border: 2px solid white;
+  border-radius: 50px;
+  margin: 5px;
+}
+
+.custom-link2:hover {
+  box-shadow: 3px 3px var(--lighter-color);
+  color: white;
+}
+*/
+
 /* Back to top button */
 
-button {
+.btt {
   font-weight: bold;
   display: flex;
   position: fixed;
@@ -37,6 +69,15 @@ button a {
 }
 
 /* top screen header */
+
+.custom-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-links {
+  max-width: 400px;
+}
 
 .top-header {
   color: white;
@@ -58,7 +99,7 @@ button a {
   text-align: center;
 }
 
-nav a {
+/* nav a {
   color: white;
   border: 3px solid var(--white-border);
   border-radius: 50px;
@@ -69,7 +110,7 @@ nav a {
 
 nav a:hover {
   box-shadow: 3px 3px var(--lighter-color);
-}
+} */
 
 /* profile and cover picture */
 
