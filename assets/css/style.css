@@ -180,14 +180,33 @@ nav a:hover {
 
 .project {
   display: flex;
+  /* justify-content: space-evenly; */
+}
+
+.project-card {
+  background-color: var(--dark-color);
+  border: 0;
+}
+
+.custom-card-body {
+  max-width: 20rem;
+  max-height: 400px;
+  min-height: 400px;
+  margin: 25px;
+  border-radius: 5px;
+}
+
+.custom-card-body:hover {
+  box-shadow: 5px 5px 5px rgb(97, 96, 96);
 }
 
 .project-links {
   display: flex;
+  width: 100%;
   justify-content: start;
   align-items: center;
   flex-wrap: wrap;
-  margin: 50px 0 50px 0;
+  margin: 50px;
 }
 
 .project-links a img {
