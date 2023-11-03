@@ -24,6 +24,8 @@ body {
   background-color: var(--dark-color);
 }
 
+/* Navigation bar with links */
+
 .header-intro {
   display: flex;
   flex-direction: column;
@@ -32,6 +34,15 @@ body {
   border: 3px solid white;
   border-radius: 25px;
   padding: 10px;
+}
+
+.custom-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-links {
+  max-width: 375px;
 }
 
 .custom-link {
@@ -77,7 +88,7 @@ button a {
   color: black;
 }
 
-/* top screen header */
+/* profile and cover picture */
 
 .intro-images {
   display: flex;
@@ -85,50 +96,6 @@ button a {
   height: 300px;
   align-items: center;
 }
-
-.custom-nav {
-  display: flex;
-  justify-content: space-between;
-}
-
-.nav-links {
-  max-width: 400px;
-}
-
-.top-header {
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: var(--dark-color);
-  padding-right: 10px;
-}
-
-/* Navigation bar with links */
-
-.header-left {
-  margin: 20px;
-  padding: 20px;
-  border: 5px solid var(--white-border);
-  border-radius: 20px;
-  width: 300px;
-  text-align: center;
-}
-
-/* nav a {
-  color: white;
-  border: 3px solid var(--white-border);
-  border-radius: 50px;
-  margin: 0 5px 10px 10px;
-  padding: 8px;
-  text-decoration: none;
-}
-
-nav a:hover {
-  box-shadow: 3px 3px var(--lighter-color);
-} */
-
-/* profile and cover picture */
 
 .profile-pic {
   border-radius: 250px;
@@ -180,7 +147,6 @@ nav a:hover {
 
 .project {
   display: flex;
-  /* justify-content: space-evenly; */
 }
 
 .project-card {
@@ -209,17 +175,6 @@ nav a:hover {
   margin: 50px;
 }
 
-.project-links a img {
-  border: 3px solid black;
-  border-radius: 20px;
-}
-
-.project-links a {
-  display: flex;
-  align-items: center;
-  position: relative;
-}
-
 /* vertical line dividers */
 
 .vertical-line {
@@ -236,6 +191,26 @@ nav a:hover {
 .contact-me {
   background-color: var(--lighter-color);
   display: flex;
+  justify-content: center;
+}
+
+.contact-me-header {
+  display: flex;
+  justify-self: start;
+}
+
+.contact-me-ul li {
+  display: flex;
+  justify-content: center;
+  min-width: 300px;
+}
+
+.contact-me-btns a {
+  color: var(--dark-color);
+  display: flex;
+  font-size: 200%;
+  margin: 10px;
+  min-width: 175px;
 }
 
 .contact-links {
