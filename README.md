@@ -2,11 +2,12 @@
 
 ## Technology Used
 
-| Technology Used |                                              Resource URL                                              |
-| --------------- | :----------------------------------------------------------------------------------------------------: |
-| HTML            | [https://developer.mozilla.org/en-US/docs/Web/HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) |
-| CSS             |  [https://developer.mozilla.org/en-US/docs/Web/CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)  |
-| Git             |                              [https://git-scm.com/](https://git-scm.com/)                              |
+| Technology Used |                                                            Resource URL                                                            |
+| --------------- | :--------------------------------------------------------------------------------------------------------------------------------: |
+| HTML            |               [https://developer.mozilla.org/en-US/docs/Web/HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)               |
+| CSS             |                [https://developer.mozilla.org/en-US/docs/Web/CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)                |
+| Bootstrap       | [https://getbootstrap.com/docs/5.3/getting-started/introduction/](https://getbootstrap.com/docs/5.3/getting-started/introduction/) |
+| Git             |                                            [https://git-scm.com/](https://git-scm.com/)                                            |
 
 ## Description
 
@@ -17,12 +18,6 @@ This is my portfolio. I'm on a mission to learn as much as I can through educati
 Within this portfolio, you'll find a simple and clean design and layout. There's a navigation bar with functional links that will seamlessly guide you to specific sections of the page. You'll also come across a profile picture of myself and an 'About Me' section. As you delve deeper into the page, you'll discover my completed projects, alongside placeholders for the ones I have planned for the future. Toward the very bottom, you'll find a section with links to my GitHub profile and multiple ways to get in touch with me. Please don't hesitate to reach out anytime using the provided links in my portfolio.
 
 ## Usage
-
-- Back To Top Button (bottom right of screen): At any moment you wish to go back to the top of the page, you may click the 'Back To Top' button and you will be taken back to the top of the page. No matter how far you scrolled down, the button will always be there for use.
-
-![back to top button screenshot](./assets/images/btt-screenshot.JPG)
-
----
 
 - Navigation bar (top right): Here you will see three buttons, 'About Me', 'Projects', 'Contact Me'. Click on either of these buttons and you will be taken to the section of the page a specific button coresponds to.
 

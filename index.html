@@ -4,51 +4,93 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jorge's Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <button><a href="#">Back To Top</a></button>
-    <header class="top-header">
-      <div class="header-left">
-        <h1>Jorge Castro</h1>
-        <h2>UC Berkeley Student</h2>
-      </div>
-      <nav>
-        <a href="#about-me">About Me</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact-me">Contact Me</a>
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid custom-nav">
+          <div class="header-intro">
+            <h1 class="navbar-brand custom-link fs-3">Jorge Castro</h1>
+            <h2 class="navbar-brand custom-link">Student at UC Berkeley</h2>
+            <button
+              class="navbar-toggler bg-white"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse nav-links" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link custom-link2"
+                  aria-current="page"
+                  href="#about-me"
+                  >About Me</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link custom-link2" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link custom-link2" href="#contact-me"
+                  >Contact Me</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
     <div class="intro-images">
       <img
-        class="cover-pic"
-        src="./assets/images/background-photo.jpg"
-        alt="Image of Green technology graphic in a wave motion"
-      />
-      <img
-        class="profile-pic"
+        class="profile-pic-resp"
         src="./assets/images/portfolio pic.jpg"
         alt="Profile picture of Jorge Castro"
       />
     </div>
     <section id="about-me" class="about-me">
-      <h3>About Me</h3>
-      <article>
-        <p>
-          I am a motivated and determined 26-year-old, eager to learn. I have
-          developed a strong affinity for web development and am committed to
-          learning as much as I can to build my skill set in tech. I have
-          successfully obtained my Cloud Solution Architect Associate
-          Certification from AWS (Amazon Web Services). Fueled by my desire to
-          learn, I am currently attending a Full Stack Engineering Bootcamp at
-          UC Berkeley to enhance my capabilities. I am on an exciting journey to
-          dive headfirst into the world of technology. I am a quick and
-          efficient learner, always eager to take on new challenges and put my
-          new skills to the test. My ultimate goal is to channel my expertise
-          and creativity to achieve a fulfilling career in tech. I am eager to
-          see where this next chapter of my life will take me.
-        </p>
-      </article>
+      <div class="card custom-card">
+        <div class="card-body">
+          <h3>About Me</h3>
+          <article class="about-me-par">
+            <img
+              class="profile-pic"
+              src="./assets/images/portfolio pic.jpg"
+              alt="Profile picture of Jorge Castro"
+            />
+            <p>
+              I am a motivated and determined 26-year-old, eager to learn. I
+              have developed a strong affinity for web development and am
+              committed to learning as much as I can to build my skill set in
+              tech. I have successfully obtained my Cloud Solution Architect
+              Associate Certification from AWS (Amazon Web Services). Fueled by
+              my desire to learn, I am currently attending a Full Stack
+              Engineering Bootcamp at UC Berkeley to enhance my capabilities.
+            </p>
+            <p>
+              I am on an exciting journey to dive headfirst into the world of
+              technology. I am a quick and efficient learner, always eager to
+              take on new challenges and put my new skills to the test. My
+              ultimate goal is to channel my expertise and creativity to achieve
+              a fulfilling career in tech. I am eager to see where this next
+              chapter of my life will take me.
+            </p>
+          </article>
+        </div>
+      </div>
     </section>
     <section id="projects" class="project">
       <header class="section-header">
@@ -56,117 +98,247 @@
       </header>
       <div class="vertical-line"></div>
       <div class="project-links">
-        <div class="fir-pro">
-          <a class="fir-pro-img" href="https://jacastro619.github.io/Pick4Me/"
-            ><img
-              class="fir-img"
-              src="./assets/images/Pick4Me.JPG"
-              alt="Screenshot of Pick4Me project"
+        <div class="card-body h-100 custom-card-body">
+          <div class="card h-100" style="width: 20rem">
+            <img
+              src="./assets/images/tech blog screenshot.jpg"
+              class="card-img-top h-50 p-1"
+              alt="screenshot of the tech blog applications homepage"
             />
-            <h3 class="fir-pro-title">Pick4Me</h3></a
-          >
+            <div class="card-body">
+              <h5 class="card-title">Tech Blog</h5>
+              <p class="card-text">
+                A simple tech blog to discuss tech topics!
+              </p>
+              <a
+                href="https://tech-blog-application619-bb245d34138f.herokuapp.com/"
+                class="btn btn-primary"
+                >Go to deployed app!</a
+              >
+            </div>
+          </div>
         </div>
-
-        <a
-          class="pro-img"
-          href="https://jacastro619.github.io/weather-dashboard/"
-          ><img
-            class="sec-pro-img"
-            src="./assets/images/weather dashboard.JPG"
-            alt="Screenshot of weather dashboard project"
-          />
-          <h3 class="title">Weather Dashboard</h3></a
-        >
-
-        <a
-          class="pro-img"
-          href="https://github.com/Jacastro619/readme-generator"
-          ><img
-            class="sec-pro-img"
-            src="./assets/images/Prompts screenshot.JPG"
-            alt="Screenshot of readme-generator prompts"
-          />
-          <h3 class="title">Read Me Generator (Node.js)</h3></a
-        >
-
-        <a
-          class="pro-img"
-          href="https://github.com/Jacastro619/readme-generator"
-          ><img
-            class="sec-pro-img"
-            src="./assets/images/Logo Maker screenshot.JPG"
-            alt="Screenshot of logo maker project"
-          />
-          <h3 class="title">Logo Maker (Node.js)</h3></a
-        >
-
-        <a
-          class="pro-img"
-          href="https://jacastro619.github.io/password-generator/"
-          ><img
-            class="sec-pro-img"
-            src="./assets/images/password project.jpg"
-            alt="Screenshot of password generator project"
-          />
-          <h3 class="title">Password Generator</h3></a
-        >
-
-        <a class="pro-img" href="https://jacastro619.github.io/javascript-quiz/"
-          ><img
-            class="sec-pro-img"
-            src="./assets/images/quiz card screenshot.JPG"
-            alt="JavaScript quiz screenshot"
-          />
-          <h3 class="title">JavaScript Quiz</h3></a
-        >
-
-        <a
-          class="pro-img"
-          href="https://jacastro619.github.io/work-day-planner/"
-          ><img
-            class="sec-pro-img"
-            src="./assets/images/day planner.JPG"
-            alt="Work day planner screenshot"
-          />
-          <h3 class="title">Work Day Planner</h3></a
-        >
-
-        <a
-          class="pro-img"
-          href="https://jacastro619.github.io/horiseon-accessibility-project/"
-          ><img
-            class="sec-pro-img"
-            src="./assets/images/horiseon-project.JPG"
-            alt="Horiseon project screenshot"
-          />
-          <h3 class="title">Horiseon Accessibility Project</h3></a
-        >
-
-        <a class="pro-img" href="#"
-          ><img
-            class="sec-pro-img"
-            src="./assets/images/Placeholder-image.png"
-            alt="Placholder image displaying coming soon"
-        /></a>
+        <div class="card-body h-100 custom-card-body">
+          <div class="card h-100" style="width: 20rem">
+            <img
+              src="./assets/images/Pick4Me.JPG"
+              class="card-img-top h-50 p-1"
+              alt="Screenshot of the Pick4Me applications landing page"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Pick4Me</h5>
+              <p class="card-text">
+                Quick and easy restaurant finder and picker!
+              </p>
+              <a
+                href="https://jacastro619.github.io/Pick4Me/"
+                class="btn btn-primary"
+                >Go to deployed app!</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="card-body h-100 custom-card-body">
+          <div class="card h-100" style="width: 20rem">
+            <img
+              src="./assets/images/Logo Maker screenshot.JPG"
+              class="card-img-top h-50 p-1"
+              alt="Image of a logo of letters S.V.G. in the middle of a green triangle created by the logo maker application"
+            />
+            <div class="card-body h-100">
+              <h5 class="card-title">Logo Maker</h5>
+              <p class="card-text">
+                Simple Node.js application to make a simple logo based off user
+                input.
+              </p>
+              <a
+                href="https://github.com/Jacastro619/logo-maker"
+                class="btn btn-primary"
+                >Demo In GitHub Repository!</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="card-body h-100 custom-card-body">
+          <div class="card h-100" style="width: 20rem">
+            <img
+              src="./assets/images/Prompts screenshot.JPG"
+              class="card-img-top h-50 p-1"
+              alt="Image of propmts from the read me generator application"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Read Me Generator</h5>
+              <p class="card-text">
+                Simple Node.js application that will generate a professional
+                readme.md file based on user input.
+              </p>
+              <a
+                href="https://github.com/Jacastro619/readme-generator"
+                class="btn btn-primary"
+                >Demo In GitHub Repository!</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="card-body h-100 custom-card-body">
+          <div class="card h-100" style="width: 20rem">
+            <img
+              src="./assets/images/weather dashboard.JPG"
+              class="card-img-top h-50 p-1"
+              alt="Screenshot of the weather dashboard application"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Weather Dashboard</h5>
+              <p class="card-text">
+                A weather forcasting application that will display the current
+                and 5 day forecast of a searched city.
+              </p>
+              <a
+                href="https://jacastro619.github.io/weather-dashboard/"
+                class="btn btn-primary"
+                >Go to deployed app!</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="card-body h-100 custom-card-body">
+          <div class="card h-100" style="width: 20rem">
+            <img
+              src="./assets/images/day planner.JPG"
+              class="card-img-top h-50 p-1"
+              alt="Screenshot of the day planner application"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Work Day Planner</h5>
+              <p class="card-text">
+                This is a workday planner that allows the user to type in tasks
+                in an hour block and save them.
+              </p>
+              <a
+                href="https://jacastro619.github.io/work-day-planner/"
+                class="btn btn-primary"
+                >Go to deployed app!</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="card-body h-100 custom-card-body">
+          <div class="card h-100" style="width: 20rem">
+            <img
+              src="./assets/images/emp-cms-screenshot.JPG"
+              class="card-img-top h-50 p-1"
+              alt="Screenshot of the employee C.M.S. application"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Employee CMS</h5>
+              <p class="card-text">
+                This is a back-end CMS that will keep track of employees, roles,
+                departments and more.
+              </p>
+              <a
+                href="https://github.com/Jacastro619/employee-cms"
+                class="btn btn-primary"
+                >Demo In GitHub Repository!</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="card-body h-100 custom-card-body">
+          <div class="card h-100" style="width: 20rem">
+            <img
+              src="./assets/images/quiz card screenshot.JPG"
+              class="card-img-top h-50 p-1"
+              alt="Screenshot of the JavaScript quiz application"
+            />
+            <div class="card-body">
+              <h5 class="card-title">JavaScript Quiz</h5>
+              <p class="card-text">
+                Fun quiz that will test the users knowledge on fundametal
+                JavaScript.
+              </p>
+              <a
+                href="https://jacastro619.github.io/javascript-quiz/"
+                class="btn btn-primary"
+                >Go to deployed app!</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="card-body h-100 custom-card-body">
+          <div class="card h-100" style="width: 20rem">
+            <img
+              src="./assets/images/password project.jpg"
+              class="card-img-top h-50 p-1"
+              alt="Screenshot of the password generator application"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Password Generator</h5>
+              <p class="card-text">
+                A password generator that generates a password based on users
+                preference from prompts.
+              </p>
+              <a
+                href="https://jacastro619.github.io/password-generator/"
+                class="btn btn-primary"
+                >Go to deployed app!</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="card-body h-100 custom-card-body">
+          <div class="card h-100" style="width: 20rem">
+            <img
+              src="./assets/images/horiseon-project.JPG"
+              class="card-img-top h-50 p-1"
+              alt="Screenshot of the Horiseon code refactor project"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Horiseon Code Refactor</h5>
+              <p class="card-text">Simple code refactoring in HTML file.</p>
+              <a
+                href="https://jacastro619.github.io/password-generator/"
+                class="btn btn-primary"
+                >Go to deployed app!</a
+              >
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <section id="contact-me" class="contact-me">
-      <header class="section-header">
-        <h3>Contact Me</h3>
-      </header>
-      <div class="vertical-line"></div>
-      <div class="contact-pills">
-        <ul class="contact-links">
-          <a href="https://github.com/Jacastro619">GitHub</a>
-          <a href="https://www.linkedin.com/in/jorge-castro-2a9545177/"
+      <ul class="nav justify-content-center contact-me-ul">
+        <li class="nav-item contact-me-btns">
+          <a
+            class="nav-link active"
+            aria-current="page"
+            href="https://github.com/Jacastro619"
+            >GitHub</a
+          >
+        </li>
+        <li class="nav-item contact-me-btns">
+          <a
+            class="nav-link"
+            href="https://www.linkedin.com/in/jorge-castro-2a9545177/"
             >LinkedIn</a
           >
-          <a href="mailto:jorgecastro619@gmail.com">Send Email</a>
-        </ul>
-      </div>
+        </li>
+        <li class="nav-item contact-me-btns">
+          <a class="nav-link" href="mailto:jorgecastro619@gmail.com">Email</a>
+        </li>
+      </ul>
     </section>
     <footer>
       <h4>Made By Jorge Castro</h4>
     </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
