@@ -398,10 +398,6 @@ footer h4 {
     padding: 0;
   }
 
-  .contact-pills {
-    justify-content: start;
-  }
-
   .custom-nav {
     display: flex;
     justify-content: center;

@@ -19,12 +19,6 @@ Within this portfolio, you'll find a simple and clean design and layout. There's
 
 ## Usage
 
-- Back To Top Button (bottom right of screen): At any moment you wish to go back to the top of the page, you may click the 'Back To Top' button and you will be taken back to the top of the page. No matter how far you scrolled down, the button will always be there for use.
-
-![back to top button screenshot](./assets/images/btt-screenshot.JPG)
-
----
-
 - Navigation bar (top right): Here you will see three buttons, 'About Me', 'Projects', 'Contact Me'. Click on either of these buttons and you will be taken to the section of the page a specific button coresponds to.
 
 ![navigation bar screenshot](./assets/images/nav-bar-screenshot.JPG)
